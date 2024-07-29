@@ -1,18 +1,10 @@
 name: RM2100 
 
 on: 
+  push:
+    branches: ["master"]
   release:
     types: [published]
-#  push:
-#    tags:
-#    - 'v*'
-  #  branches: 
-  #    - master
-  schedule:
-    - cron: 0 17 * * 4
-#  watch:
-#    types: [started]
-
 jobs:
   build:
     runs-on: ubuntu-18.04
