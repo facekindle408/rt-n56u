@@ -19,7 +19,13 @@ jobs:
         sudo apt-get update
         sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot \
         cpio git python-docutils gettext automake autopoint texinfo build-essential help2man \
-        pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
+        pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget \
+                        python3-mako \
+                doxygen \
+                python3-docutils \
+                cmake \
+                python3-requests \
+                python3-numpy \
     - name: Clone source code
       run: |
         cd toolchain-mipsel
